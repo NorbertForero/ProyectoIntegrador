@@ -7,17 +7,19 @@
     tools:context=".newRegister">
 
     <ScrollView
-        android:layout_width="389dp"
-        android:layout_height="501dp"
+        android:id="@+id/scrollView3"
+        android:layout_width="377dp"
+        android:layout_height="434dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="36dp"
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -25,19 +27,19 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView14"
+                android:id="@+id/textView12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/textView1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Nombres" />
 
             <EditText
-                android:id="@+id/editText12"
-                android:layout_width="361dp"
+                android:id="@+id/nombres"
+                android:layout_width="346dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName" />
@@ -49,7 +51,7 @@
                 android:text="Apellidos" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/apellidos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -65,7 +67,7 @@
                 android:text="S/N Equipo" />
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/equipo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -81,14 +83,11 @@
                 android:text="Celular" />
 
             <EditText
-                android:id="@+id/editText4"
+                android:id="@+id/celular"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="phone" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -97,14 +96,11 @@
                 android:text="Correo" />
 
             <EditText
-                android:id="@+id/editText5"
+                android:id="@+id/correo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="textEmailAddress" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -113,14 +109,11 @@
                 android:text="Cédula" />
 
             <EditText
-                android:id="@+id/editText6"
+                android:id="@+id/cedula"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="number" />
 
             <TextView
                 android:id="@+id/textView7"
@@ -129,14 +122,11 @@
                 android:text="Valor Arreglo" />
 
             <EditText
-                android:id="@+id/editText7"
+                android:id="@+id/valorArreglo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/textView8"
@@ -145,14 +135,11 @@
                 android:text="Fecha de Ingreso" />
 
             <EditText
-                android:id="@+id/editText8"
-                android:layout_width="357dp"
+                android:id="@+id/fechaIngreso"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="date" />
 
             <TextView
                 android:id="@+id/textView9"
@@ -161,14 +148,11 @@
                 android:text="Fecha de salida" />
 
             <EditText
-                android:id="@+id/editText9"
+                android:id="@+id/fechaSalida"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
                 android:ems="10"
-                android:inputType="textPersonName" />
+                android:inputType="date" />
 
             <TextView
                 android:id="@+id/textView10"
@@ -177,7 +161,7 @@
                 android:text="Tecnico Asignado" />
 
             <EditText
-                android:id="@+id/editText10"
+                android:id="@+id/tecnico"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -193,7 +177,7 @@
                 android:text="Estado" />
 
             <EditText
-                android:id="@+id/editText11"
+                android:id="@+id/estado"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -206,25 +190,25 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/limpiar"
         android:layout_width="182dp"
         android:layout_height="48dp"
-        android:layout_marginTop="564dp"
+        android:layout_marginTop="200dp"
         android:text="Limpiar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintHorizontal_bias="0.069"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/registrarOrden"
         android:layout_width="182dp"
         android:layout_height="48dp"
-        android:layout_marginTop="564dp"
+        android:layout_marginTop="200dp"
         android:text="Guardar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.93"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
