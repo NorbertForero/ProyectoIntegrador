@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".activityConsultarRegistro"></activity>
+=======
+        <activity android:name=".newRegister"></activity>
+>>>>>>> 539921590b2f8dd7f7822ae1edbfb1fb4e32831d
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
