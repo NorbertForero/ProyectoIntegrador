@@ -51,7 +51,7 @@ public class newRegister extends AppCompatActivity {
         mLimpiar = findViewById(R.id.limpiar);
         mRegistrarOrden = findViewById(R.id.registrarOrden);
 
-
+        fireBaseDatabase = FirebaseDatabase.getInstance().getReference("DataBaseUsers");
 
         mRegistrarOrden.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,6 +96,28 @@ public class newRegister extends AppCompatActivity {
             }
         });
 
-        fireBaseDatabase = FirebaseDatabase.getInstance().getReference("DataBaseUsers");
+        mLimpiar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mNombres.setText("");
+                mApellidos.setText("");
+                msnEquipo.setText("");
+                mCelular.setText("");
+                mCorreo.setText("");
+                mCedula.setText("");
+                mValorArreglo.setText("");
+                mFechaIngreso.setText("");
+                mFechaSalida.setText("");
+                mTecnicoAsignado.setText("");
+                mEstado.setText("");
+
+
+                Toast miToast = Toast.makeText(getApplicationContext(),"Datos Eliminados",Toast.LENGTH_LONG);
+
+
+            }
+        });
+
+
     }
 }
