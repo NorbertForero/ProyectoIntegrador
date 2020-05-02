@@ -68,11 +68,9 @@ public class newRegister extends AppCompatActivity {
                 String strTecnicoAsignado = mTecnicoAsignado.getText().toString();
                 String strEstado = mEstado.getText().toString();
 
-
                 Toast miToast = Toast.makeText(getApplicationContext(),"Datos Registrados",Toast.LENGTH_LONG);
 
                 orderData datosRegistro = new orderData();
-
                 datosRegistro.setNombres(strNombre);
                 datosRegistro.setApellidos(strApellido);
                 datosRegistro.setSnEquipo(strEquipo);
@@ -84,7 +82,6 @@ public class newRegister extends AppCompatActivity {
                 datosRegistro.setFechaSalida(strFechaSalida);
                 datosRegistro.setTecnicoAsignado(strTecnicoAsignado);
                 datosRegistro.setEstado(strEstado);
-
 
                 String key = fireBaseDatabase.push().getKey();
                 fireBaseDatabase.child(key).setValue(datosRegistro);
@@ -111,13 +108,9 @@ public class newRegister extends AppCompatActivity {
                 mTecnicoAsignado.setText("");
                 mEstado.setText("");
 
-
                 Toast miToast = Toast.makeText(getApplicationContext(),"Datos Eliminados",Toast.LENGTH_LONG);
-
 
             }
         });
-
-
     }
 }
