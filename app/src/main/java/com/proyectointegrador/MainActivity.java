@@ -37,5 +37,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        flujo2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), activityConsultarRegistro.class);
+                startActivity(intent);
+            }
+        });
+
+        flujo3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), registrosGuardados.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
