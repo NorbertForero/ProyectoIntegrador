@@ -48,8 +48,8 @@ public class newRegister extends AppCompatActivity {
         mFechaSalida = findViewById(R.id.fechaSalida);
         mTecnicoAsignado = findViewById(R.id.tecnico);
         mEstado = findViewById(R.id.estado);
-        mLimpiar = findViewById(R.id.limpiar);
-        mRegistrarOrden = findViewById(R.id.registrarOrden);
+        mLimpiar = findViewById(R.id.buttonDescartar);
+        mRegistrarOrden = findViewById(R.id.buttonActualizar);
 
         fireBaseDatabase = FirebaseDatabase.getInstance().getReference("DataBaseUsers");
 

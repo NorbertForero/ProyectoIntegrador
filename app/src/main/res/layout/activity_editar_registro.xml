@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".newRegister">
+    tools:context=".ActivityEditarRegistro">
 
     <ScrollView
         android:id="@+id/scrollView3"
@@ -194,7 +194,7 @@
         android:layout_width="182dp"
         android:layout_height="48dp"
         android:layout_marginTop="200dp"
-        android:text="@string/button_newRegister_Limpiar"
+        android:text="@string/button_EditarRegistro_Descartar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.069"
         app:layout_constraintStart_toStartOf="parent"
@@ -205,7 +205,7 @@
         android:layout_width="182dp"
         android:layout_height="48dp"
         android:layout_marginTop="200dp"
-        android:text="@string/button_newRegister_Guardar"
+        android:text="@string/button_EditarRegistro_Actualizar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.93"
         app:layout_constraintStart_toStartOf="parent"

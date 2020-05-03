@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
 
-        flujo1 = findViewById(R.id.registrarOrden);
+        flujo1 = findViewById(R.id.buttonActualizar);
         flujo2 = findViewById(R.id.consultarRegistro);
         flujo3 = findViewById(R.id.registrosGuardados);
 
