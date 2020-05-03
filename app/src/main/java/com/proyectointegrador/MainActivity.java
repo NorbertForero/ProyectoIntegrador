@@ -7,8 +7,6 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.proyectointegrador.ui.main.MainFragment;
-
 public class MainActivity extends AppCompatActivity {
     private Button flujo1;
     private Button flujo2;
@@ -28,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), newRegister.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -37,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), activityConsultarRegistro.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -46,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), registrosGuardados.class);
                 startActivity(intent);
-                finish();
             }
         });
     }

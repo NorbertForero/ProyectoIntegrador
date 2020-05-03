@@ -68,7 +68,8 @@ public class newRegister extends AppCompatActivity {
                 String strTecnicoAsignado = mTecnicoAsignado.getText().toString();
                 String strEstado = mEstado.getText().toString();
 
-                Toast miToast = Toast.makeText(getApplicationContext(),"Datos Registrados",Toast.LENGTH_LONG);
+                String miToastGuardado = getString(R.string.toast_newRegister_MensajeGuardado);
+                Toast.makeText(getApplicationContext(),miToastGuardado,Toast.LENGTH_LONG).show();
 
                 orderData datosRegistro = new orderData();
                 datosRegistro.setNombres(strNombre);
@@ -86,7 +87,6 @@ public class newRegister extends AppCompatActivity {
                 String key = fireBaseDatabase.push().getKey();
                 fireBaseDatabase.child(key).setValue(datosRegistro);
 
-                miToast.show();
                 finish();
                 Intent irMain = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(irMain);
@@ -110,7 +110,8 @@ public class newRegister extends AppCompatActivity {
                 mTecnicoAsignado.setText("");
                 mEstado.setText("");
 
-                Toast miToast = Toast.makeText(getApplicationContext(),"Datos Eliminados",Toast.LENGTH_LONG);
+                String miToastEliminado = getString(R.string.toast_newRegister_MensajeLimpiar);
+                Toast.makeText(getApplicationContext(),miToastEliminado,Toast.LENGTH_LONG).show();
 
             }
         });

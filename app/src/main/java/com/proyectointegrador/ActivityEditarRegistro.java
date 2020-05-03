@@ -23,6 +23,7 @@ public class ActivityEditarRegistro extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), activityConsultarRegistro.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -31,6 +32,7 @@ public class ActivityEditarRegistro extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), ActivityRegistroActualizado.class);
                 startActivity(intent);
+                finish();
             }
         });
 
