@@ -87,8 +87,10 @@ public class newRegister extends AppCompatActivity {
                 fireBaseDatabase.child(key).setValue(datosRegistro);
 
                 miToast.show();
+                finish();
                 Intent irMain = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(irMain);
+
 
             }
         });

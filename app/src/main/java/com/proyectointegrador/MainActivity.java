@@ -23,17 +23,12 @@ public class MainActivity extends AppCompatActivity {
         flujo2 = findViewById(R.id.consultarRegistro);
         flujo3 = findViewById(R.id.registrosGuardados);
 
-        if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.container, MainFragment.newInstance())
-                    .commitNow();
-        }
-
         flujo1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), newRegister.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -42,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), activityConsultarRegistro.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -50,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), registrosGuardados.class);
                 startActivity(intent);
+                finish();
             }
         });
-
     }
 }
