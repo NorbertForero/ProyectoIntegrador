@@ -3,8 +3,8 @@ package com.proyectointegrador;
 import java.io.Serializable;
 
 public class orderData implements Serializable {
-    private String nombres;
-    private String apellidos;
+    private String nombre;
+    private String apellido;
     private String snEquipo;
     private String celular;
     private String correo;
@@ -18,20 +18,20 @@ public class orderData implements Serializable {
     public orderData() {
     }
 
-    public String getNombres() {
-        return nombres;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setNombres(String nombres) {
-        this.nombres = nombres;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public String getApellidos() {
-        return apellidos;
+    public String getApellido() {
+        return apellido;
     }
 
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 
     public String getSnEquipo() {

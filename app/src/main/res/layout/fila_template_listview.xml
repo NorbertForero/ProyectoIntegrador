@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/TablaDatos"
+        android:layout_width="359dp"
+        android:layout_height="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="68dp">
+
+        <TableRow
+            android:layout_width="351dp"
+            android:layout_height="39dp">
+
+            <TextView
+                android:id="@+id/nombret"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="NOMBRE"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/apellidot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="APELLIDO"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/serialt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="S/R EQUIPO"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tecnicot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TECNICO"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/estadot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=" ESTADO"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>

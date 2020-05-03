@@ -16,8 +16,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class newRegister extends AppCompatActivity {
 
-    private TextView mNombres;
-    private TextView mApellidos;
+    private TextView mNombre;
+    private TextView mApellido;
     private TextView msnEquipo;
     private TextView mCelular;
     private TextView mCorreo;
@@ -37,8 +37,8 @@ public class newRegister extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_register);
 
-        mNombres = findViewById(R.id.nombres);
-        mApellidos = findViewById(R.id.apellidos);
+        mNombre = findViewById(R.id.nombres);
+        mApellido = findViewById(R.id.apellidos);
         msnEquipo = findViewById(R.id.equipo);
         mCelular = findViewById(R.id.celular);
         mCorreo = findViewById(R.id.correo);
@@ -56,8 +56,8 @@ public class newRegister extends AppCompatActivity {
         mRegistrarOrden.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String strNombre = mNombres.getText().toString();
-                String strApellido = mApellidos.getText().toString();
+                String strNombre = mNombre.getText().toString();
+                String strApellido = mApellido.getText().toString();
                 String strEquipo = msnEquipo.getText().toString();
                 String strCelular = mCelular.getText().toString();
                 String strCorreo = mCorreo.getText().toString();
@@ -71,8 +71,8 @@ public class newRegister extends AppCompatActivity {
                 Toast miToast = Toast.makeText(getApplicationContext(),"Datos Registrados",Toast.LENGTH_LONG);
 
                 orderData datosRegistro = new orderData();
-                datosRegistro.setNombres(strNombre);
-                datosRegistro.setApellidos(strApellido);
+                datosRegistro.setNombre(strNombre);
+                datosRegistro.setApellido(strApellido);
                 datosRegistro.setSnEquipo(strEquipo);
                 datosRegistro.setCelular(strCelular);
                 datosRegistro.setCorreo(strCorreo);
@@ -98,8 +98,8 @@ public class newRegister extends AppCompatActivity {
         mLimpiar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mNombres.setText("");
-                mApellidos.setText("");
+                mNombre.setText("");
+                mApellido.setText("");
                 msnEquipo.setText("");
                 mCelular.setText("");
                 mCorreo.setText("");
