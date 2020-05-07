@@ -16,6 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".activityConsultarRegistro"
             android:label="@string/ActivityConsultarRegistro_title"
             android:parentActivityName=".MainActivity"/>
@@ -36,6 +37,12 @@
             android:label="@string/ActivityConsultarRegistro_title"
             android:parentActivityName=".activityConsultarRegistro"/>
 
+=======
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+>>>>>>> 9ff39820b8b2dd90d8ff7d4c1fda7d7e000249ba
     </application>
 
 </manifest>
