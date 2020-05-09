@@ -5,15 +5,15 @@ import java.io.Serializable;
 public class orderData implements Serializable {
     private String nombre;
     private String apellido;
-    private String snEquipo;
+    private String serial;
+    private String tecnico;
+    private String estado;
     private String celular;
     private String correo;
     private String cedula;
     private String valorArreglo;
     private String fechaIngreso;
     private String fechaSalida;
-    private String tecnicoAsignado;
-    private String estado;
 
     public orderData() {
     }
@@ -34,12 +34,28 @@ public class orderData implements Serializable {
         this.apellido = apellido;
     }
 
-    public String getSnEquipo() {
-        return snEquipo;
+    public String getSerial() {
+        return serial;
     }
 
-    public void setSnEquipo(String snEquipo) {
-        this.snEquipo = snEquipo;
+    public void setSerial(String serial) {
+        this.serial = serial;
+    }
+
+    public String getTecnico() {
+        return tecnico;
+    }
+
+    public void setTecnico(String tecnico) {
+        this.tecnico = tecnico;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 
     public String getCelular() {
@@ -88,21 +104,5 @@ public class orderData implements Serializable {
 
     public void setFechaSalida(String fechaSalida) {
         this.fechaSalida = fechaSalida;
-    }
-
-    public String getTecnicoAsignado() {
-        return tecnicoAsignado;
-    }
-
-    public void setTecnicoAsignado(String tecnicoAsignado) {
-        this.tecnicoAsignado = tecnicoAsignado;
-    }
-
-    public String getEstado() {
-        return estado;
-    }
-
-    public void setEstado(String estado) {
-        this.estado = estado;
     }
 }

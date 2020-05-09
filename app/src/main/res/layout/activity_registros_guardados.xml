@@ -6,16 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".registrosGuardados">
 
-    <Button
-        android:id="@+id/volver"
-        android:layout_width="384dp"
-        android:layout_height="49dp"
-        android:text="Volver"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
@@ -26,14 +16,72 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TableRow
+            android:id="@+id/tableRow"
+            android:layout_width="356dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="59dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/nombret"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="NOMBRE"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="34dp"
+                tools:layout_editor_absoluteY="96dp" />
+
+            <TextView
+                android:id="@+id/apellidot"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="APELLIDO"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/serialt"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="S/R EQUIPO"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tecnicot"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="TECNICO"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/estadot"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text=" ESTADO"
+                android:textStyle="bold" />
+        </TableRow>
+
     <ListView
         android:id="@android:id/list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/volver"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/titulo"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintTop_toBottomOf="@+id/tableRow"
+        app:layout_constraintVertical_bias="0.0" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/volver"
+        android:layout_width="384dp"
+        android:layout_height="49dp"
+        android:text="Volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

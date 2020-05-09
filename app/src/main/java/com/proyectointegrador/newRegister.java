@@ -58,14 +58,14 @@ public class newRegister extends AppCompatActivity {
             public void onClick(View v) {
                 String strNombre = mNombre.getText().toString();
                 String strApellido = mApellido.getText().toString();
-                String strEquipo = msnEquipo.getText().toString();
+                String strSerial = msnEquipo.getText().toString();
                 String strCelular = mCelular.getText().toString();
                 String strCorreo = mCorreo.getText().toString();
                 String strCedula = mCedula.getText().toString();
                 String strValorArreglo = mValorArreglo.getText().toString();
                 String strFechaIngreso = mFechaIngreso.getText().toString();
                 String strFechaSalida = mFechaSalida.getText().toString();
-                String strTecnicoAsignado = mTecnicoAsignado.getText().toString();
+                String strTecnico = mTecnicoAsignado.getText().toString();
                 String strEstado = mEstado.getText().toString();
 
                 Toast miToast = Toast.makeText(getApplicationContext(),"Datos Registrados",Toast.LENGTH_LONG);
@@ -73,14 +73,14 @@ public class newRegister extends AppCompatActivity {
                 orderData datosRegistro = new orderData();
                 datosRegistro.setNombre(strNombre);
                 datosRegistro.setApellido(strApellido);
-                datosRegistro.setSnEquipo(strEquipo);
+                datosRegistro.setSerial(strSerial);
                 datosRegistro.setCelular(strCelular);
                 datosRegistro.setCorreo(strCorreo);
                 datosRegistro.setCedula(strCedula);
                 datosRegistro.setValorArreglo(strValorArreglo);
                 datosRegistro.setFechaIngreso(strFechaIngreso);
                 datosRegistro.setFechaSalida(strFechaSalida);
-                datosRegistro.setTecnicoAsignado(strTecnicoAsignado);
+                datosRegistro.setTecnico(strTecnico);
                 datosRegistro.setEstado(strEstado);
 
                 String key = fireBaseDatabase.push().getKey();
