@@ -7,21 +7,13 @@
     android:background="@android:color/background_dark"
     tools:context=".newRegister">
 
-    <TextView
-        android:id="@+id/banner"
-        android:layout_width="324dp"
-        android:layout_height="42dp"
-        android:text="Apellidos"
-        android:textColor="@android:color/background_light"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:ignore="MissingConstraints" />
-
     <Button
         android:id="@+id/registrarOrden"
         android:layout_width="182dp"
         android:layout_height="48dp"
-        android:layout_marginTop="284dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         android:background="@drawable/boton_azul"
         android:fontFamily="@font/actor"
         android:lineSpacingExtra="10sp"
@@ -29,15 +21,18 @@
         android:textAllCaps="false"
         android:textColor="@drawable/txt_boton_azul"
         android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/limpiar"
         app:layout_constraintTop_toBottomOf="@+id/scrollView3"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="212dp" />
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/limpiar"
         android:layout_width="182dp"
         android:layout_height="48dp"
-        android:layout_marginTop="284dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/boton_dos"
         android:fontFamily="@font/actor"
         android:lineSpacingExtra="10sp"
@@ -45,24 +40,21 @@
         android:textAllCaps="false"
         android:textColor="@drawable/txt_boton1"
         android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView3"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:ignore="MissingConstraints" />
 
     <ScrollView
         android:id="@+id/scrollView3"
-        android:layout_width="377dp"
-        android:layout_height="434dp"
+        android:layout_width="393dp"
+        android:layout_height="439dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/banner"
-        app:layout_constraintVertical_bias="0.01999998">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -270,14 +262,5 @@
 
         </LinearLayout>
     </ScrollView>
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="33dp"
-        android:layout_height="22dp"
-        app:srcCompat="@mipmap/volver"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
