@@ -12,98 +12,6 @@
         android:layout_height="match_parent"
         android:background="@android:color/background_dark">
 
-        <Button
-<<<<<<< HEAD
-            android:id="@+id/buttonActualizar"
-            android:layout_width="300dp"
-            android:layout_height="87dp"
-            android:text="@string/button_MainActivity_NuevoRegistro"
-=======
-            android:id="@+id/registrarOrden"
-            android:layout_width="350dp"
-            android:layout_height="95dp"
-            android:background="@drawable/ovalo"
-            android:drawableLeft="@mipmap/nuevo"
-            android:fontFamily="@font/actor"
-            android:lineSpacingExtra="10sp"
-            android:text="Nuevo Registro          "
-            android:textAllCaps="false"
-            android:textColor="@drawable/txt_boton1"
-            android:textSize="24sp"
->>>>>>> 9ff39820b8b2dd90d8ff7d4c1fda7d7e000249ba
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.491"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.539" />
-
-<<<<<<< HEAD
-        <Button
-            android:id="@+id/consultarRegistro"
-            android:layout_width="300dp"
-            android:layout_height="87dp"
-            android:layout_marginTop="20dp"
-            android:text="@string/ActivityConsultarRegistro_title"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonActualizar" />
-
-        <Button
-            android:id="@+id/registrosGuardados"
-            android:layout_width="300dp"
-            android:layout_height="87dp"
-            android:layout_marginTop="20dp"
-            android:text="@string/button_ActivityMain_RegistrosGuardados"
-=======
-
-        <Button
-            android:id="@+id/registrosGuardados"
-            android:layout_width="350dp"
-            android:layout_height="95dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/ovalo"
-            android:text="Registros Guardados"
-            android:drawableLeft="@mipmap/guardado"
-            android:textColor="@drawable/txt_boton1"
->>>>>>> 9ff39820b8b2dd90d8ff7d4c1fda7d7e000249ba
-            app:layout_constraintEnd_toEndOf="parent"
-            android:fontFamily="@font/actor"
-            android:lineSpacingExtra="10sp"
-            android:textAllCaps="false"
-            android:textSize="24sp"
-            app:layout_constraintHorizontal_bias="0.491"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/consultarRegistro" />
-
-<<<<<<< HEAD
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/txt_ActivityMain_TuTrabajoDiario"
-            app:layout_constraintBottom_toBottomOf="parent"
-=======
-        <Button
-            android:id="@+id/consultarRegistro"
-            android:layout_width="350dp"
-            android:layout_height="95dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/ovalo"
-            android:drawableLeft="@mipmap/busqueda"
-            android:fontFamily="@font/actor"
-            android:lineSpacingExtra="10sp"
-            android:text="Consultar Registro    "
-            android:textAllCaps="false"
-            android:textColor="@drawable/txt_boton1"
-            android:textSize="24sp"
->>>>>>> 9ff39820b8b2dd90d8ff7d4c1fda7d7e000249ba
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.491"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/registrarOrden" />
-
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="414dp"
@@ -113,6 +21,75 @@
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="-2dp"
             tools:layout_editor_absouteX="0dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_ActivityMain_TuTrabajoDiario"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.405"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+
+            android:id="@+id/registrarOrden"
+            android:layout_width="350dp"
+            android:layout_height="95dp"
+            android:background="@drawable/ovalo"
+            android:drawableLeft="@mipmap/nuevo"
+            android:fontFamily="@font/actor"
+            android:lineSpacingExtra="10sp"
+            android:text="@string/button_MainActivity_NuevoRegistro"
+            android:textAllCaps="false"
+            android:textColor="@drawable/txt_boton1"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.539" />
+
+        <Button
+            android:id="@+id/registrosGuardados"
+            android:layout_width="350dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ovalo"
+            android:text="@string/button_ActivityMain_RegistrosGuardados"
+            android:drawableLeft="@mipmap/guardado"
+            android:textColor="@drawable/txt_boton1"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/actor"
+            android:lineSpacingExtra="10sp"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/consultarRegistro" />
+
+
+        <Button
+            android:id="@+id/consultarRegistro"
+            android:layout_width="350dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ovalo"
+            android:drawableLeft="@mipmap/busqueda"
+            android:fontFamily="@font/actor"
+            android:lineSpacingExtra="10sp"
+            android:text="@string/ActivityConsultarRegistro_title"
+            android:textAllCaps="false"
+            android:textColor="@drawable/txt_boton1"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registrarOrden" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

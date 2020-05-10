@@ -15,7 +15,7 @@ public class ActivityEditarRegistro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editar_registro);
 
-        descartar = findViewById(R.id.buttonDescartar);
+        descartar = findViewById(R.id.limpiar);
         actualizar = findViewById(R.id.buttonActualizar);
 
         descartar.setOnClickListener(new View.OnClickListener() {

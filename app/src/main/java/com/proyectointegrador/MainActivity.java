@@ -17,13 +17,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
 
-        flujo1 = findViewById(R.id.buttonActualizar);
+        flujo1 = findViewById(R.id.registrarOrden);
         flujo2 = findViewById(R.id.consultarRegistro);
         flujo3 = findViewById(R.id.registrosGuardados);
 
         flujo1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(getApplicationContext(), newRegister.class);
                 startActivity(intent);
             }
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         flujo2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(getApplicationContext(), activityConsultarRegistro.class);
                 startActivity(intent);
             }
@@ -40,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         flujo3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(getApplicationContext(), registrosGuardados.class);
                 startActivity(intent);
             }

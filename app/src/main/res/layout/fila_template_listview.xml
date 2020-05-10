@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark">
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="400dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/nombret"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="NOMBRE"
+            android:textColor="@drawable/txt_boton1"
+            android:background="@drawable/borde_list"/>
+
+        <TextView
+            android:id="@+id/apellidot"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="APELLIDO"
+            android:layout_marginTop="0dp"
+            android:textColor="@drawable/txt_boton1"
+            android:background="@drawable/borde_list"/>
+
+        <TextView
+            android:id="@+id/serialt"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="S/R EQUIPO"
+            android:textColor="@drawable/txt_boton1"
+            android:background="@drawable/borde_list"/>
+
+        <TextView
+            android:id="@+id/tecnicot"
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:text="TECNICO"
+            android:textColor="@drawable/txt_boton1"
+            android:background="@drawable/borde_list"/>
+
+        <TextView
+            android:id="@+id/estadot"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text=" ESTADO"
+            android:textColor="@drawable/txt_boton1"
+            android:background="@drawable/borde_list"/>
+    </TableRow>
+
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>
