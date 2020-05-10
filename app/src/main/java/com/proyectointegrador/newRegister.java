@@ -16,8 +16,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class newRegister extends AppCompatActivity {
 
-    private TextView mNombres;
-    private TextView mApellidos;
+    private TextView mNombre;
+    private TextView mApellido;
     private TextView msnEquipo;
     private TextView mCelular;
     private TextView mCorreo;
@@ -37,8 +37,8 @@ public class newRegister extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_register);
 
-        mNombres = findViewById(R.id.nombres);
-        mApellidos = findViewById(R.id.apellidos);
+        mNombre = findViewById(R.id.nombres);
+        mApellido = findViewById(R.id.apellidos);
         msnEquipo = findViewById(R.id.equipo);
         mCelular = findViewById(R.id.celular);
         mCorreo = findViewById(R.id.correo);
@@ -56,41 +56,45 @@ public class newRegister extends AppCompatActivity {
         mRegistrarOrden.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String strNombre = mNombres.getText().toString();
-                String strApellido = mApellidos.getText().toString();
-                String strEquipo = msnEquipo.getText().toString();
-                String strCelular = mCelular.getText().toString();
-                String strCorreo = mCorreo.getText().toString();
-                String strCedula = mCedula.getText().toString();
-                String strValorArreglo = mValorArreglo.getText().toString();
-                String strFechaIngreso = mFechaIngreso.getText().toString();
-                String strFechaSalida = mFechaSalida.getText().toString();
-                String strTecnicoAsignado = mTecnicoAsignado.getText().toString();
-                String strEstado = mEstado.getText().toString();
 
-                Toast miToast = Toast.makeText(getApplicationContext(),"Datos Registrados",Toast.LENGTH_LONG);
+                if (validar())
+                {
+                    String strNombre = mNombre.getText().toString();
+                    String strApellido = mApellido.getText().toString();
+                    String strSerial = msnEquipo.getText().toString();
+                    String strCelular = mCelular.getText().toString();
+                    String strCorreo = mCorreo.getText().toString();
+                    String strCedula = mCedula.getText().toString();
+                    String strValorArreglo = mValorArreglo.getText().toString();
+                    String strFechaIngreso = mFechaIngreso.getText().toString();
+                    String strFechaSalida = mFechaSalida.getText().toString();
+                    String strTecnico = mTecnicoAsignado.getText().toString();
+                    String strEstado = mEstado.getText().toString();
 
-                orderData datosRegistro = new orderData();
-                datosRegistro.setNombres(strNombre);
-                datosRegistro.setApellidos(strApellido);
-                datosRegistro.setSnEquipo(strEquipo);
-                datosRegistro.setCelular(strCelular);
-                datosRegistro.setCorreo(strCorreo);
-                datosRegistro.setCedula(strCedula);
-                datosRegistro.setValorArreglo(strValorArreglo);
-                datosRegistro.setFechaIngreso(strFechaIngreso);
-                datosRegistro.setFechaSalida(strFechaSalida);
-                datosRegistro.setTecnicoAsignado(strTecnicoAsignado);
-                datosRegistro.setEstado(strEstado);
+                    Toast miToast = Toast.makeText(getApplicationContext(), "Datos Registrados", Toast.LENGTH_LONG);
 
-                String key = fireBaseDatabase.push().getKey();
-                fireBaseDatabase.child(key).setValue(datosRegistro);
+                    orderData datosRegistro = new orderData();
+                    datosRegistro.setNombre(strNombre);
+                    datosRegistro.setApellido(strApellido);
+                    datosRegistro.setSerial(strSerial);
+                    datosRegistro.setCelular(strCelular);
+                    datosRegistro.setCorreo(strCorreo);
+                    datosRegistro.setCedula(strCedula);
+                    datosRegistro.setValorArreglo(strValorArreglo);
+                    datosRegistro.setFechaIngreso(strFechaIngreso);
+                    datosRegistro.setFechaSalida(strFechaSalida);
+                    datosRegistro.setTecnico(strTecnico);
+                    datosRegistro.setEstado(strEstado);
 
-                miToast.show();
-                finish();
-                Intent irMain = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(irMain);
+                    String key = fireBaseDatabase.push().getKey();
+                    fireBaseDatabase.child(key).setValue(datosRegistro);
 
+                    miToast.show();
+                    finish();
+                    Intent irMain = new Intent(getApplicationContext(), MainActivity.class);
+                    startActivity(irMain);
+                    finish();
+                }
 
             }
         });
@@ -98,8 +102,8 @@ public class newRegister extends AppCompatActivity {
         mLimpiar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mNombres.setText("");
-                mApellidos.setText("");
+                mNombre.setText("");
+                mApellido.setText("");
                 msnEquipo.setText("");
                 mCelular.setText("");
                 mCorreo.setText("");
@@ -114,5 +118,63 @@ public class newRegister extends AppCompatActivity {
 
             }
         });
+    }
+
+    public boolean validar(){
+
+        boolean validation = true;
+
+        String c1 = mNombre.getText().toString();
+        String c2 = mApellido.getText().toString();
+        String c3 = msnEquipo.getText().toString();
+        String c4 = mCelular.getText().toString();
+        String c5 = mCorreo.getText().toString();
+        String c6 = mCedula.getText().toString();
+        String c7 = mValorArreglo.getText().toString();
+        String c8 = mFechaIngreso.getText().toString();
+        String c9 = mFechaSalida.getText().toString();
+        String c10 = mEstado.getText().toString();
+
+        if (c1.isEmpty()) {
+            mNombre.setError("Campo vacio");
+            return false;
+        }
+        if (c2.isEmpty()) {
+            mApellido.setError("Campo vacio");
+            return false;
+        }
+        if (c3.isEmpty()) {
+            msnEquipo.setError("Campo vacio");
+            return false;
+        }
+        if (c4.isEmpty()) {
+            mCelular.setError("Campo vacio");
+            return false;
+        }
+        if (c5.isEmpty()) {
+            mCorreo.setError("Campo vacio");
+            return false;
+        }
+        if (c6.isEmpty()) {
+            mCedula.setError("Campo vacio");
+            return false;
+        }
+        if (c7.isEmpty()) {
+            mValorArreglo.setError("Campo vacio");
+            return false;
+        }
+        if (c8.isEmpty()) {
+            mFechaIngreso.setError("Campo vacio");
+            return false;
+        }
+        if (c9.isEmpty()) {
+            mFechaSalida.setError("Campo vacio");
+            return false;
+        }
+        if (c10.isEmpty()) {
+            mEstado.setError("Campo vacio");
+            return false;
+        }
+        return validation;
     }
 }
