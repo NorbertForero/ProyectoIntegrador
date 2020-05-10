@@ -73,9 +73,11 @@ public class registrosGuardados extends ListActivity {
         BotonVolver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
+                finish();
+
             }
         });
 

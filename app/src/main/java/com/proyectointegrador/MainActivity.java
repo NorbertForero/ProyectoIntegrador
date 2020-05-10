@@ -26,27 +26,27 @@ public class MainActivity extends AppCompatActivity {
         flujo1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(getApplicationContext(), newRegister.class);
                 startActivity(intent);
-                finish();
             }
         });
 
         flujo2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(getApplicationContext(), activityConsultarRegistro.class);
                 startActivity(intent);
-                finish();
             }
         });
 
         flujo3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(getApplicationContext(), registrosGuardados.class);
                 startActivity(intent);
-                finish();
             }
         });
     }

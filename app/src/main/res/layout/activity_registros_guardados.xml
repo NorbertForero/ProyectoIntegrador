@@ -4,63 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".registrosGuardados">
+    tools:context=".registrosGuardados"
+    android:background="@android:color/background_dark">
 
     <TextView
-        android:id="@+id/titulo"
+        android:id="@+id/resgistros"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Registros Guardados"
+        android:layout_marginTop="16dp"
+        android:text="Lista de registros"
+        android:textColor="@drawable/txt_boton1"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TableRow
             android:id="@+id/tableRow"
-            android:layout_width="356dp"
+            android:layout_width="400dp"
             android:layout_height="19dp"
             android:layout_marginTop="59dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:id="@+id/nombret"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:text="NOMBRE"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteX="34dp"
-                tools:layout_editor_absoluteY="96dp" />
+        <TextView
+            android:id="@+id/nombret"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="NOMBRE"
+            android:textStyle="bold"
+            android:textColor="@drawable/txt_boton1"
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="96dp" />
 
-            <TextView
-                android:id="@+id/apellidot"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:text="APELLIDO"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/apellidot"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="APELLIDO"
+            android:textStyle="bold"
+            android:textColor="@drawable/txt_boton1"
+            />
 
-            <TextView
-                android:id="@+id/serialt"
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:text="S/R EQUIPO"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/serialt"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="S/R EQUIPO"
+            android:textStyle="bold"
+            android:textColor="@drawable/txt_boton1"
+            />
 
-            <TextView
-                android:id="@+id/tecnicot"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:text="TECNICO"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tecnicot"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="TECNICO"
+            android:textStyle="bold"
+            android:textColor="@drawable/txt_boton1"
+            />
 
             <TextView
                 android:id="@+id/estadot"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:text=" ESTADO"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@drawable/txt_boton1" />
         </TableRow>
 
     <ListView
@@ -81,6 +94,8 @@
         android:layout_width="384dp"
         android:layout_height="49dp"
         android:text="Volver"
+        android:background="@drawable/boton_azul"
+        android:textColor="@drawable/txt_boton_azul"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
