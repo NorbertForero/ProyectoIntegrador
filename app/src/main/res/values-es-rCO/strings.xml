@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Proyecto Integrador</string>
+    <string name="editText_ConsultarRegistro_IngresarSerial">Ingresa el serial de tu equipo</string>
+    <string name="button_ConsultarRegistro_Buscar">Buscar</string>
+    <string name="button_ConsultarRegistro_Editar">Editar</string>
+    <string name="editText_newRegister_Nombre">Nombre</string>
+    <string name="button_newRegister_Limpiar">Limpiar</string>
+    <string name="button_newRegister_Guardar">Guardar</string>
+    <string name="editText_newRegister_Apellido">Apellido</string>
+    <string name="editText_newRegister_Serial">Número serial</string>
+    <string name="editText_newRegister_TelefonoCelular">Número celular</string>
+    <string name="editText_newRegister_Correo">Correo electrónico</string>
+    <string name="editText_newRegister_Cedula">Cédula</string>
+    <string name="editText_newRegister_CostoDeReparacion">Costo de reparación</string>
+    <string name="editText_newRegister_FechaEntrada">Fecha de ingreso</string>
+    <string name="editText_newRegister_FechaSalida">Fecha de salida</string>
+    <string name="editText_newRegister_Estado">Estado</string>
+    <string name="editText_newRegister_TecnicoAsignado">Ténico asignado</string>
+    <string name="button_EditarRegistro_Descartar">Descartar</string>
+    <string name="button_EditarRegistro_Actualizar">Actualizar</string>
+    <string name="button_RegistroActualizado_Volver">Volver</string>
+    <string name="ActivityConsultarRegistro_title">Consultar registro</string>
+    <string name="ActivityEditarRegistro_title">Editar registro</string>
+    <string name="button_MainActivity_NuevoRegistro">Nuevo registro</string>
+    <string name="button_ActivityMain_RegistrosGuardados">Registros guardados</string>
+    <string name="txt_ActivityMain_TuTrabajoDiario">Tu trabajo diario</string>
+    <string name="ActivityNewRegister_title">Agregar nuevo registro</string>
+    <string name="ActivityRegistrosGuardados_title">Registros guardados</string>
+    <string name="toast_newRegister_MensajeGuardado">Datos registrados</string>
+    <string name="toast_newRegister_MensajeLimpiar">Datos eliminados</string>
+</resources>

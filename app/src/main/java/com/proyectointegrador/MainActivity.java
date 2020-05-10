@@ -7,8 +7,6 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.proyectointegrador.ui.main.MainFragment;
-
 public class MainActivity extends AppCompatActivity {
     private Button flujo1;
     private Button flujo2;
