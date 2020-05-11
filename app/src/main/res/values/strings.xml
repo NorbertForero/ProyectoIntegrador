@@ -16,7 +16,7 @@
     <string name="editText_newRegister_CostoDeReparacion">Repairing cost</string>
     <string name="editText_newRegister_FechaEntrada">Date of entry</string>
     <string name="editText_newRegister_FechaSalida">Date of solution</string>
-    <string name="editText_newRegister_TecnicoAsignado">Assigned Technician</string>
+    <string name="editText_newRegister_TecnicoAsignado">Technician</string>
     <string name="editText_newRegister_Estado">Status</string>
     <string name="button_EditarRegistro_Descartar">Discard</string>
     <string name="button_EditarRegistro_Actualizar">Update</string>
@@ -25,7 +25,7 @@
     <string name="button_ActivityMain_RegistrosGuardados">Saved records</string>
     <string name="txt_ActivityMain_TuTrabajoDiario">Your daily work</string>
     <string name="ActivityNewRegister_title">Add a new record</string>
-    <string name="ActivityRegistrosGuardados_title">Saved records</string>
+    <string name="ActivityRegistrosGuardados_title">List of records</string>
     <string name="toast_newRegister_MensajeGuardado">Your data has been saved</string>
     <string name="toast_newRegister_MensajeLimpiar">Cleared</string>
 </resources>

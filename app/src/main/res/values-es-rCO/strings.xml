@@ -16,7 +16,7 @@
     <string name="editText_newRegister_FechaEntrada">Fecha de ingreso</string>
     <string name="editText_newRegister_FechaSalida">Fecha de salida</string>
     <string name="editText_newRegister_Estado">Estado</string>
-    <string name="editText_newRegister_TecnicoAsignado">Ténico asignado</string>
+    <string name="editText_newRegister_TecnicoAsignado">Técnico</string>
     <string name="button_EditarRegistro_Descartar">Descartar</string>
     <string name="button_EditarRegistro_Actualizar">Actualizar</string>
     <string name="button_RegistroActualizado_Volver">Volver</string>
@@ -26,7 +26,7 @@
     <string name="button_ActivityMain_RegistrosGuardados">Registros guardados</string>
     <string name="txt_ActivityMain_TuTrabajoDiario">Tu trabajo diario</string>
     <string name="ActivityNewRegister_title">Agregar nuevo registro</string>
-    <string name="ActivityRegistrosGuardados_title">Registros guardados</string>
+    <string name="ActivityRegistrosGuardados_title">Lista de registros</string>
     <string name="toast_newRegister_MensajeGuardado">Datos registrados</string>
     <string name="toast_newRegister_MensajeLimpiar">Datos eliminados</string>
 </resources>
