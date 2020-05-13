@@ -8,7 +8,7 @@
     <string name="button_newRegister_Limpiar">Limpiar</string>
     <string name="button_newRegister_Guardar">Guardar</string>
     <string name="editText_newRegister_Apellido">Apellido</string>
-    <string name="editText_newRegister_Serial">Número serial</string>
+    <string name="editText_newRegister_Serial">No. Serial</string>
     <string name="editText_newRegister_TelefonoCelular">Número celular</string>
     <string name="editText_newRegister_Correo">Correo electrónico</string>
     <string name="editText_newRegister_Cedula">Cédula</string>

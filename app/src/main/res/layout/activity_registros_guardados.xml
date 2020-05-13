@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Lista de registros"
+        android:text="@string/ActivityRegistrosGuardados_title"
         android:textColor="@drawable/txt_boton1"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -34,9 +34,10 @@
             android:id="@+id/nombret"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="NOMBRE"
-            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/editText_newRegister_Nombre"
             android:textColor="@drawable/txt_boton1"
+            android:textStyle="bold"
             tools:layout_editor_absoluteX="34dp"
             tools:layout_editor_absoluteY="96dp" />
 
@@ -44,36 +45,37 @@
             android:id="@+id/apellidot"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="APELLIDO"
-            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/editText_newRegister_Apellido"
             android:textColor="@drawable/txt_boton1"
-            />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/serialt"
-            android:layout_width="90dp"
+            android:layout_width="85dp"
             android:layout_height="wrap_content"
-            android:text="S/R EQUIPO"
-            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/editText_newRegister_Serial"
             android:textColor="@drawable/txt_boton1"
-            />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tecnicot"
-            android:layout_width="80dp"
+            android:layout_width="90dp"
             android:layout_height="wrap_content"
-            android:text="TECNICO"
-            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/editText_newRegister_TecnicoAsignado"
             android:textColor="@drawable/txt_boton1"
-            />
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/estadot"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:text=" ESTADO"
-                android:textStyle="bold"
-                android:textColor="@drawable/txt_boton1" />
+        <TextView
+            android:id="@+id/estadot"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/editText_newRegister_Estado"
+            android:textColor="@drawable/txt_boton1"
+            android:textStyle="bold" />
         </TableRow>
 
     <ListView
@@ -93,8 +95,8 @@
         android:id="@+id/volver"
         android:layout_width="384dp"
         android:layout_height="49dp"
-        android:text="Volver"
         android:background="@drawable/boton_azul"
+        android:text="@string/button_RegistroActualizado_Volver"
         android:textColor="@drawable/txt_boton_azul"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

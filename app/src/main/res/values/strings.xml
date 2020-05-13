@@ -9,7 +9,7 @@
     <string name="button_newRegister_Limpiar">Clear</string>
     <string name="button_newRegister_Guardar">Save</string>
     <string name="editText_newRegister_Apellido">Last name</string>
-    <string name="editText_newRegister_Serial">Serial number</string>
+    <string name="editText_newRegister_Serial">S/N</string>
     <string name="editText_newRegister_TelefonoCelular">Cellphone number</string>
     <string name="editText_newRegister_Correo">E-mail</string>
     <string name="editText_newRegister_Cedula">ID number</string>

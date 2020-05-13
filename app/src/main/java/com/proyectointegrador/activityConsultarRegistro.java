@@ -7,9 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.List;
+
 public class activityConsultarRegistro extends AppCompatActivity {
 
     private Button editar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
