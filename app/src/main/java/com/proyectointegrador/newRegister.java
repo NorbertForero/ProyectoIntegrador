@@ -88,7 +88,7 @@ public class newRegister extends AppCompatActivity {
 
 
                     fireBaseDatabase.child(strSerial).setValue(datosRegistro);
-2
+
                     miToast.show();
                     finish();
                     Intent irMain = new Intent(getApplicationContext(), MainActivity.class);
