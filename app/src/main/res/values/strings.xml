@@ -20,7 +20,7 @@
     <string name="editText_newRegister_Estado">Status</string>
     <string name="button_EditarRegistro_Descartar">Discard</string>
     <string name="button_EditarRegistro_Actualizar">Update</string>
-    <string name="button_RegistroActualizado_Volver">Return</string>
+    <string name="button_RegistroActualizado_Volver">Return to main menu</string>
     <string name="button_MainActivity_NuevoRegistro">New record</string>
     <string name="button_ActivityMain_RegistrosGuardados">Saved records</string>
     <string name="txt_ActivityMain_TuTrabajoDiario">Your daily work</string>
@@ -28,4 +28,5 @@
     <string name="ActivityRegistrosGuardados_title">List of records</string>
     <string name="toast_newRegister_MensajeGuardado">Your data has been saved</string>
     <string name="toast_newRegister_MensajeLimpiar">Cleared</string>
+    <string name="button_RegistrosGuardados_Volver">Return</string>
 </resources>

@@ -78,6 +78,8 @@ public class registrosGuardados extends ListActivity {
                 startActivity(intent);
                 finish();
 
+
+
             }
         });
 

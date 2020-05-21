@@ -96,7 +96,7 @@
         android:layout_width="384dp"
         android:layout_height="49dp"
         android:background="@drawable/boton_azul"
-        android:text="@string/button_RegistroActualizado_Volver"
+        android:text="@string/button_RegistrosGuardados_Volver"
         android:textColor="@drawable/txt_boton_azul"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
