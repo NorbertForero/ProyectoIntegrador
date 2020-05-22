@@ -33,6 +33,7 @@ public class activityConsultarRegistro extends ListActivity {
     private EditText editTextInsertar;
     private ListView list;
     private orderData personaSelected;
+    private String nombreDB,apellidoDB,serialDB,celularDB,correoDB,cedulaDB,valorArregloDB,fechaIngresoDB,fechaSalidaDB,tecnicoDB,estadoDB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,22 +52,23 @@ public class activityConsultarRegistro extends ListActivity {
                 personaSelected = (orderData) adapterView.getItemAtPosition(i);
                 final String serialN = personaSelected.getSerial().trim();
                 Query serial = firebaseDatabase.orderByChild("serial").equalTo(serialN);
+
                 serial.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         String sNumber = dataSnapshot.child(serialN).child("serial").getValue(String.class);
                         if (sNumber.equals(serialN)){
-                            String nombreDB = dataSnapshot.child(serialN).child("nombre").getValue(String.class);
-                            String apellidoDB = dataSnapshot.child(serialN).child("apellido").getValue(String.class);
-                            String serialDB = dataSnapshot.child(serialN).child("serial").getValue(String.class);
-                            String celularDB = dataSnapshot.child(serialN).child("celular").getValue(String.class);
-                            String correoDB = dataSnapshot.child(serialN).child("correo").getValue(String.class);
-                            String cedulaDB = dataSnapshot.child(serialN).child("cedula").getValue(String.class);
-                            String valorArregloDB = dataSnapshot.child(serialN).child("valorArreglo").getValue(String.class);
-                            String fechaIngresoDB = dataSnapshot.child(serialN).child("fechaIngreso").getValue(String.class);
-                            String fechaSalidaDB = dataSnapshot.child(serialN).child("fechaSalida").getValue(String.class);
-                            String tecnicoDB = dataSnapshot.child(serialN).child("tecnico").getValue(String.class);
-                            String estadoDB = dataSnapshot.child(serialN).child("estado").getValue(String.class);
+                            nombreDB = dataSnapshot.child(serialN).child("nombre").getValue(String.class);
+                            apellidoDB = dataSnapshot.child(serialN).child("apellido").getValue(String.class);
+                            serialDB = dataSnapshot.child(serialN).child("serial").getValue(String.class);
+                            celularDB = dataSnapshot.child(serialN).child("celular").getValue(String.class);
+                            correoDB = dataSnapshot.child(serialN).child("correo").getValue(String.class);
+                            cedulaDB = dataSnapshot.child(serialN).child("cedula").getValue(String.class);
+                            valorArregloDB = dataSnapshot.child(serialN).child("valorArreglo").getValue(String.class);
+                            fechaIngresoDB = dataSnapshot.child(serialN).child("fechaIngreso").getValue(String.class);
+                            fechaSalidaDB = dataSnapshot.child(serialN).child("fechaSalida").getValue(String.class);
+                            tecnicoDB = dataSnapshot.child(serialN).child("tecnico").getValue(String.class);
+                            estadoDB = dataSnapshot.child(serialN).child("estado").getValue(String.class);
 
                             Intent intent = new Intent(getApplicationContext(),ActivityEditarRegistro.class);
                             intent.putExtra("nombre", nombreDB);
@@ -84,6 +86,7 @@ public class activityConsultarRegistro extends ListActivity {
 
                             startActivity(intent);
                         }
+
                     }
 
                     @Override
@@ -91,6 +94,7 @@ public class activityConsultarRegistro extends ListActivity {
 
                     }
                 });
+
             }
         });
 

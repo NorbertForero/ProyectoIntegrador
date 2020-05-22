@@ -100,7 +100,6 @@ public class ActivityEditarRegistro extends AppCompatActivity {
         } else {
             Toast.makeText(this, "No hay datos diferentes para actualizar", Toast.LENGTH_SHORT).show();
         }
-
     }
 
     private boolean isEstadoChanged() {
