@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TableRow;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -33,6 +34,7 @@ public class activityConsultarRegistro extends ListActivity {
     private EditText editTextInsertar;
     private ListView list;
     private orderData personaSelected;
+    private TableRow fila;
     private String nombreDB,apellidoDB,serialDB,celularDB,correoDB,cedulaDB,valorArregloDB,fechaIngresoDB,fechaSalidaDB,tecnicoDB,estadoDB;
 
     @Override
@@ -44,6 +46,8 @@ public class activityConsultarRegistro extends ListActivity {
         botonBuscar = findViewById(R.id.buttonBuscar);
         editTextInsertar = findViewById(R.id.editTextConsultar);
         list = findViewById(android.R.id.list);
+        fila = findViewById(R.id.tableRow);
+
         listaDeDatosOrder = new ArrayList<>();
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -122,11 +126,14 @@ public class activityConsultarRegistro extends ListActivity {
                             orderData datos = new orderData();
                             if(!searchText.isEmpty()){
                                 if (serial.toUpperCase().contains(searchText.toUpperCase())){
+                                    fila.setVisibility(View.VISIBLE);
                                     datos.setNombre(nombre);
                                     datos.setApellido(apellido);
                                     datos.setSerial(serial);
 
                                     listaDeDatosOrder.add(datos);
+                                }else{
+                                    fila.setVisibility(View.INVISIBLE);
                                 }
                             }else {
                                 Toast miToast = Toast.makeText(getApplicationContext(),"Campo de búsqueda vacío",Toast.LENGTH_LONG);

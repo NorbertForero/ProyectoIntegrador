@@ -94,7 +94,7 @@ public class ActivityEditarRegistro extends AppCompatActivity {
 
     public void ActualizarRegistro(View view) {
         if (isNombreChanged() || isApellidoChanged() || isSerialChanged() || isCelularChanged() || isCorreoChanged() || isCedulaChanged() || isValorArregloChanged() || isFechaEntradaChanged() || isFechaSalidaChanged() || isTecnicoChanged() || isEstadoChanged()) {
-            Toast.makeText(this, "Datos actulizados correctamente", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Datos actualizados correctamente", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(getApplicationContext(),ActivityRegistroActualizado.class);
             startActivity(intent);
         } else {
