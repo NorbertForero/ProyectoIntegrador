@@ -9,32 +9,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" android:label="@string/app_name">
+        <activity android:name=".confirmarEliminacionRegistro"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activityConsultarRegistro"
+        <activity
+            android:name=".activityConsultarRegistro"
             android:label="@string/ActivityConsultarRegistro_title"
-            android:parentActivityName=".MainActivity"/>
-
-        <activity android:name=".newRegister"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".newRegister"
             android:label="@string/ActivityNewRegister_title"
-            android:parentActivityName=".MainActivity"/>
-
-        <activity android:name=".registrosGuardados"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".registrosGuardados"
             android:label="@string/ActivityRegistrosGuardados_title"
-            android:parentActivityName=".MainActivity"/>
-
-        <activity android:name=".ActivityEditarRegistro"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ActivityEditarRegistro"
             android:label="@string/ActivityEditarRegistro_title"
-            android:parentActivityName=".activityConsultarRegistro"/>
-
-        <activity android:name=".ActivityRegistroActualizado"
+            android:parentActivityName=".activityConsultarRegistro" />
+        <activity
+            android:name=".ActivityRegistroActualizado"
             android:label="@string/ActivityConsultarRegistro_title"
-            android:parentActivityName=".activityConsultarRegistro"/>
+            android:parentActivityName=".activityConsultarRegistro" />
 
         <meta-data
             android:name="preloaded_fonts"

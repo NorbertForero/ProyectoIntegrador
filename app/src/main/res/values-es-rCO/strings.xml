@@ -19,15 +19,22 @@
     <string name="editText_newRegister_TecnicoAsignado">Técnico</string>
     <string name="button_EditarRegistro_Descartar">Descartar</string>
     <string name="button_EditarRegistro_Actualizar">Actualizar</string>
-    <string name="button_RegistroActualizado_Volver">Volver al menu principal</string>
+    <string name="button_RegistroActualizado_Volver">Volver</string>
+    <string name="button_RegistroActualizado_SeguirBuscando">Seguir Buscando</string>
     <string name="ActivityConsultarRegistro_title">Consultar registro</string>
     <string name="ActivityEditarRegistro_title">Editar registro</string>
     <string name="button_MainActivity_NuevoRegistro">Nuevo registro</string>
     <string name="button_ActivityMain_RegistrosGuardados">Registros guardados</string>
     <string name="txt_ActivityMain_TuTrabajoDiario">Tu trabajo diario</string>
+    <string name="txt_RegistroActualizado_ActualizadoCorrectamente">¡Actualizado Correctamente!</string>
+    <string name="txt_RegistroActualizado_RegistroActualizado">Los datos del registro fueron actualizados correctamente.</string>
     <string name="ActivityNewRegister_title">Agregar nuevo registro</string>
     <string name="ActivityRegistrosGuardados_title">Lista de registros</string>
     <string name="toast_newRegister_MensajeGuardado">Datos registrados</string>
     <string name="toast_newRegister_MensajeLimpiar">Datos eliminados</string>
     <string name="button_RegistrosGuardados_Volver">Volver</string>
+    <string name="txt_EliminarRegistro_EstasSeguro">¿Estas seguro de eliminar el registro?</string>
+    <string name="txt_EliminarRegistro_SiEliminas">Si eliminas este registro no podras volver a recuperar esta información.</string>
+    <string name="button_EliminarRegistro_Cancelar">Cancelar</string>
+    <string name="button_EliminarRegistro_Aceptar">Aceptar</string>
 </resources>

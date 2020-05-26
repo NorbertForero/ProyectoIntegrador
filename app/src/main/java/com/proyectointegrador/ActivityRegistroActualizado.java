@@ -10,6 +10,7 @@ import android.widget.Button;
 public class ActivityRegistroActualizado extends AppCompatActivity {
 
     private Button volver;
+    private Button seguirBuscando;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,13 @@ public class ActivityRegistroActualizado extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
+        seguirBuscando=findViewById(R.id.buttonSeguirBuscando);
+        seguirBuscando.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), activityConsultarRegistro.class);
+                startActivity(intent);
+            }
+        });
     }
 }
