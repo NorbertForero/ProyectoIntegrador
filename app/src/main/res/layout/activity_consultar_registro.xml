@@ -1,9 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activityConsultarRegistro">
+    tools:context=".registrosGuardados"
+    android:background="@android:color/background_dark">
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="400dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/nombret"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/editText_newRegister_Nombre"
+            android:textColor="@drawable/txt_boton1"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="96dp" />
+
+        <TextView
+            android:id="@+id/apellidot"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/editText_newRegister_Apellido"
+            android:textColor="@drawable/txt_boton1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/serialt"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/editText_newRegister_Serial"
+            android:textColor="@drawable/txt_boton1"
+            android:textStyle="bold" />
+
+
+    </TableRow>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="400dp"
+        android:layout_height="521dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow"
+        app:layout_constraintVertical_bias="0.0">
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/editTextConsultar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bordes_edit_text"
+        android:drawableLeft="@drawable/ic_serial"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/editText_ConsultarRegistro_IngresarSerial"
+        android:textColorHint="@android:color/background_light"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.186" />
+
+    <Button
+        android:id="@+id/buttonBuscar"
+        android:layout_width="107dp"
+        android:layout_height="31dp"
+        android:background="@drawable/boton_azul"
+        android:text="@string/button_ConsultarRegistro_Buscar"
+        android:textColor="@drawable/txt_boton_azul"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextConsultar" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

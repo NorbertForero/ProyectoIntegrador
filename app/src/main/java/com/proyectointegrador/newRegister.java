@@ -86,8 +86,8 @@ public class newRegister extends AppCompatActivity {
                     datosRegistro.setTecnico(strTecnico);
                     datosRegistro.setEstado(strEstado);
 
-                    String key = fireBaseDatabase.push().getKey();
-                    fireBaseDatabase.child(key).setValue(datosRegistro);
+
+                    fireBaseDatabase.child(strSerial).setValue(datosRegistro);
 
                     miToast.show();
                     finish();
