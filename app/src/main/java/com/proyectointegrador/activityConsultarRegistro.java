@@ -31,6 +31,7 @@ public class activityConsultarRegistro extends ListActivity {
     private List<orderData> listaDeDatosOrder;
     private DatabaseReference firebaseDatabase;
     private Button botonBuscar;
+    private Button botonEliminar;
     private EditText editTextInsertar;
     private ListView list;
     private orderData personaSelected;
@@ -44,6 +45,7 @@ public class activityConsultarRegistro extends ListActivity {
 
         firebaseDatabase = FirebaseDatabase.getInstance().getReference("DataBaseUsers");
         botonBuscar = findViewById(R.id.buttonBuscar);
+        botonEliminar = findViewById(R.id.eliminar);
         editTextInsertar = findViewById(R.id.editTextConsultar);
         list = findViewById(android.R.id.list);
         fila = findViewById(R.id.tableRow);
@@ -149,5 +151,12 @@ public class activityConsultarRegistro extends ListActivity {
             }
         });
 
+        botonEliminar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent12 = new Intent(getApplicationContext(), confirmarEliminacionRegistro.class);
+                startActivity(intent12);
+            }
+            });
     }
 }

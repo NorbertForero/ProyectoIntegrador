@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#0088C4</color>
     <color name="colorAccent">#0088C4</color>
     <color name="grisBotones">#4B4E4F</color>
+    <color name="grisOscuro">#383838</color>
     <color name="azulPrincipal">#0088C4</color>
     <color name="prueba">#208277</color>
 </resources>

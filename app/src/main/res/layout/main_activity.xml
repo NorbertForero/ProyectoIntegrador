@@ -26,12 +26,16 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/actor"
             android:text="@string/txt_ActivityMain_TuTrabajoDiario"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.405"
+            app:layout_constraintVertical_bias="0.362"
             tools:ignore="MissingConstraints" />
 
         <Button

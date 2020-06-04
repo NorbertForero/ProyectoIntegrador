@@ -20,13 +20,20 @@
     <string name="editText_newRegister_Estado">Status</string>
     <string name="button_EditarRegistro_Descartar">Discard</string>
     <string name="button_EditarRegistro_Actualizar">Update</string>
-    <string name="button_RegistroActualizado_Volver">Return to main menu</string>
+    <string name="button_RegistroActualizado_Volver">Return</string>
+    <string name="button_RegistroActualizado_SeguirBuscando">Keep looking</string>
     <string name="button_MainActivity_NuevoRegistro">New record</string>
     <string name="button_ActivityMain_RegistrosGuardados">Saved records</string>
     <string name="txt_ActivityMain_TuTrabajoDiario">Your daily work</string>
+    <string name="txt_RegistroActualizado_ActualizadoCorrectamente">Updated successfully!</string>
+    <string name="txt_RegistroActualizado_RegistroActualizado">The registration data was updated correctly.</string>
     <string name="ActivityNewRegister_title">Add a new record</string>
     <string name="ActivityRegistrosGuardados_title">List of records</string>
     <string name="toast_newRegister_MensajeGuardado">Your data has been saved</string>
     <string name="toast_newRegister_MensajeLimpiar">Cleared</string>
     <string name="button_RegistrosGuardados_Volver">Return</string>
+    <string name="txt_EliminarRegistro_EstasSeguro">Are you sure about to delete the record?</string>
+    <string name="txt_EliminarRegistro_SiEliminas">If you delete this record you will not be able to retrieve that information again.</string>
+    <string name="button_EliminarRegistro_Cancelar">Cancel</string>
+    <string name="button_EliminarRegistro_Aceptar">Accept</string>
 </resources>
