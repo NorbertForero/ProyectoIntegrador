@@ -46,7 +46,7 @@
     <TableRow
         android:id="@+id/tableRow"
         android:layout_width="400dp"
-        android:layout_height="23dp"
+        android:layout_height="20dp"
         android:layout_marginTop="150dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,7 +56,7 @@
         <TextView
             android:id="@+id/nombret"
             android:layout_width="130dp"
-            android:layout_height="wrap_content"
+            android:layout_height="20dp"
             android:fontFamily="@font/actor"
             android:gravity="center"
             android:text="@string/editText_newRegister_Nombre"
@@ -69,7 +69,7 @@
         <TextView
             android:id="@+id/apellidot"
             android:layout_width="130dp"
-            android:layout_height="wrap_content"
+            android:layout_height="20dp"
             android:fontFamily="@font/actor"
             android:gravity="center"
             android:text="@string/editText_newRegister_Apellido"
@@ -80,7 +80,7 @@
         <TextView
             android:id="@+id/serialt"
             android:layout_width="139dp"
-            android:layout_height="wrap_content"
+            android:layout_height="20dp"
             android:fontFamily="@font/actor"
             android:gravity="center"
             android:text="@string/editText_newRegister_Serial"
