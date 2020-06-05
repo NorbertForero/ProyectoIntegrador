@@ -36,6 +36,7 @@ public class activityConsultarRegistro extends ListActivity {
     private ListView list;
     private orderData personaSelected;
     private TableRow fila;
+    private Button  botonEditar;
     private String nombreDB,apellidoDB,serialDB,celularDB,correoDB,cedulaDB,valorArregloDB,fechaIngresoDB,fechaSalidaDB,tecnicoDB,estadoDB;
 
     @Override
@@ -49,6 +50,7 @@ public class activityConsultarRegistro extends ListActivity {
         editTextInsertar = findViewById(R.id.editTextConsultar);
         list = findViewById(android.R.id.list);
         fila = findViewById(R.id.tableRow);
+        botonEditar = findViewById(R.id.editar);
 
         listaDeDatosOrder = new ArrayList<>();
 
@@ -57,7 +59,9 @@ public class activityConsultarRegistro extends ListActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 personaSelected = (orderData) adapterView.getItemAtPosition(i);
                 final String serialN = personaSelected.getSerial().trim();
-                Query serial = firebaseDatabase.orderByChild("serial").equalTo(serialN);
+                final Query serial = firebaseDatabase.orderByChild("serial").equalTo(serialN);
+
+
 
                 serial.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
@@ -76,21 +80,25 @@ public class activityConsultarRegistro extends ListActivity {
                             tecnicoDB = dataSnapshot.child(serialN).child("tecnico").getValue(String.class);
                             estadoDB = dataSnapshot.child(serialN).child("estado").getValue(String.class);
 
-                            Intent intent = new Intent(getApplicationContext(),ActivityEditarRegistro.class);
-                            intent.putExtra("nombre", nombreDB);
-                            intent.putExtra("apellido", apellidoDB);
-                            intent.putExtra("serial", serialDB);
-                            intent.putExtra("celular", celularDB);
-                            intent.putExtra("correo", correoDB);
-                            intent.putExtra("cedula", cedulaDB);
-                            intent.putExtra("valorArreglo", valorArregloDB);
-                            intent.putExtra("fechaIngreso", fechaIngresoDB);
-                            intent.putExtra("fechaSalida", fechaSalidaDB);
-                            intent.putExtra("tecnico", tecnicoDB);
-                            intent.putExtra("estado", estadoDB);
+                            botonEditar.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    Intent intent = new Intent(getApplicationContext(),ActivityEditarRegistro.class);
+                                    intent.putExtra("nombre", nombreDB);
+                                    intent.putExtra("apellido", apellidoDB);
+                                    intent.putExtra("serial", serialDB);
+                                    intent.putExtra("celular", celularDB);
+                                    intent.putExtra("correo", correoDB);
+                                    intent.putExtra("cedula", cedulaDB);
+                                    intent.putExtra("valorArreglo", valorArregloDB);
+                                    intent.putExtra("fechaIngreso", fechaIngresoDB);
+                                    intent.putExtra("fechaSalida", fechaSalidaDB);
+                                    intent.putExtra("tecnico", tecnicoDB);
+                                    intent.putExtra("estado", estadoDB);
 
-
-                            startActivity(intent);
+                                    startActivity(intent);
+                                }
+                            });
                         }
 
                     }
@@ -150,13 +158,5 @@ public class activityConsultarRegistro extends ListActivity {
                 });
             }
         });
-
-        botonEliminar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent12 = new Intent(getApplicationContext(), confirmarEliminacionRegistro.class);
-                startActivity(intent12);
-            }
-            });
     }
 }
