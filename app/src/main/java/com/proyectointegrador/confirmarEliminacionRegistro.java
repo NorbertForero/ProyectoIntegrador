@@ -22,29 +22,6 @@ public class confirmarEliminacionRegistro extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_confirmar_eliminacion_registro);
-        botonCancelar = findViewById(R.id.buttonCancelar);
-        botonAceptar = findViewById(R.id.buttonAceptar);
 
-        fireBaseDatabase = FirebaseDatabase.getInstance().getReference("DataBaseUsers");
-
-        botonAceptar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = getIntent();
-                numSerial = intent.getStringExtra("serial");
-                fireBaseDatabase.child(numSerial).removeValue();
-                Intent intent2 = new Intent(getApplicationContext(), activityConsultarRegistro.class);
-                startActivity(intent2);
-                finish();
-            }
-        });
-
-        botonCancelar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
     }
 }

@@ -3,9 +3,11 @@ package com.proyectointegrador;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -104,9 +106,30 @@ public class activityConsultarRegistro extends ListActivity {
                         botonEliminar.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                Intent intent12 = new Intent(getApplicationContext(), confirmarEliminacionRegistro.class);
+                                /*Intent intent12 = new Intent(getApplicationContext(), confirmarEliminacionRegistro.class);
                                 intent12.putExtra("serial",serialDB);
-                                startActivity(intent12);
+                                startActivity(intent12);*/
+                                AlertDialog.Builder builder = new AlertDialog.Builder(activityConsultarRegistro.this);
+                                LayoutInflater inflater = getLayoutInflater();
+                                View view = inflater.inflate(R.layout.activity_confirmar_eliminacion_registro, null);
+                                builder.setView(view);
+                                final AlertDialog dialogPop = builder.create();
+                                dialogPop.show();
+                                Button btAceptar = view.findViewById(R.id.buttonAceptar);
+                                btAceptar.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        firebaseDatabase.child(serialDB).removeValue();
+                                        dialogPop.cancel();
+                                    }
+                                });
+                                Button btCancelar = view.findViewById(R.id.buttonCancelar);
+                                btCancelar.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        dialogPop.cancel();
+                                    }
+                                });
                             }
                         });
                     }

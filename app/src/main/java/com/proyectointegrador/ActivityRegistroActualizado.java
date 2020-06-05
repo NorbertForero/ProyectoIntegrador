@@ -24,6 +24,7 @@ public class ActivityRegistroActualizado extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
         seguirBuscando=findViewById(R.id.buttonSeguirBuscando);
@@ -32,6 +33,8 @@ public class ActivityRegistroActualizado extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), activityConsultarRegistro.class);
                 startActivity(intent);
+                finish();
+
             }
         });
     }

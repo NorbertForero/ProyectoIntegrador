@@ -7,145 +7,10 @@
     tools:context=".confirmarEliminacionRegistro"
     android:background="@android:color/background_dark">
 
-    <Button
-
-        android:id="@+id/editar"
-        android:layout_width="64dp"
-        android:layout_height="84dp"
-        android:layout_marginBottom="32dp"
-        android:background="@drawable/editar_eliminar"
-        android:drawableLeft="@mipmap/editar"
-        android:fontFamily="@font/actor"
-        android:lineSpacingExtra="10sp"
-        android:textAllCaps="false"
-        android:textSize="24sp"
-        android:alpha="0.5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-
-        android:id="@+id/eliminar"
-        android:layout_width="64dp"
-        android:layout_height="84dp"
-        android:layout_marginBottom="32dp"
-        android:background="@drawable/editar_eliminar"
-        android:drawableLeft="@mipmap/eliminar"
-        android:fontFamily="@font/actor"
-        android:lineSpacingExtra="10sp"
-        android:textAllCaps="false"
-        android:textSize="24sp"
-        android:alpha="0.5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.572"
-        app:layout_constraintStart_toEndOf="@+id/editar"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TableRow
-        android:id="@+id/tableRow"
-        android:layout_width="400dp"
-        android:layout_height="19dp"
-        android:layout_marginTop="150dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/nombret"
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/actor"
-            android:gravity="center"
-            android:text="@string/editText_newRegister_Nombre"
-            android:textColor="@drawable/txt_boton1"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="34dp"
-            tools:layout_editor_absoluteY="96dp" />
-
-        <TextView
-            android:id="@+id/apellidot"
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/actor"
-            android:gravity="center"
-            android:text="@string/editText_newRegister_Apellido"
-            android:textColor="@drawable/txt_boton1"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/serialt"
-            android:layout_width="139dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/actor"
-            android:gravity="center"
-            android:text="@string/editText_newRegister_Serial"
-            android:textColor="@drawable/txt_boton1"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-
-    </TableRow>
-
-    <EditText
-        android:id="@+id/editTextConsultar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@drawable/bordes_edit_text"
-        android:drawableLeft="@drawable/ic_serial"
-        android:ems="10"
-        android:hint="@string/editText_ConsultarRegistro_IngresarSerial"
-        android:inputType="textPersonName"
-        android:textColor="@android:color/background_light"
-        android:textColorHint="@android:color/darker_gray"
-        app:layout_constraintBottom_toTopOf="@+id/tableRow"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.186" />
-
-    <Button
-        android:id="@+id/buttonBuscar"
-        android:layout_width="182dp"
-        android:layout_height="48dp"
-        android:background="@drawable/boton_azul"
-        android:fontFamily="@font/actor"
-        android:lineSpacingExtra="10sp"
-        android:text="@string/button_ConsultarRegistro_Buscar"
-        android:textAllCaps="false"
-        android:textColor="@drawable/txt_boton_azul"
-        android:textSize="24sp"
-        android:alpha="0.5"
-        app:layout_constraintBottom_toTopOf="@+id/tableRow"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextConsultar"
-        app:layout_constraintVertical_bias="0.756" />
-
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="411dp"
-        android:layout_height="800dp"
-        android:alpha="0.7"
-        android:background="@drawable/fondo"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="-3dp"
-        tools:layout_editor_absoluteY="-43dp" />
 
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="339dp"
+        android:layout_width="350dp"
         android:layout_height="245dp"
         android:background="@drawable/alert"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -196,11 +61,11 @@
         android:textColor="@drawable/txt_boton_azul"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView16"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.796"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextConsultar"
-        app:layout_constraintVertical_bias="0.953" />
+        app:layout_constraintEnd_toEndOf="@+id/textView16"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toTopOf="@+id/textView16"
+        app:layout_constraintVertical_bias="0.928" />
 
     <Button
         android:id="@+id/buttonAceptar"
@@ -214,10 +79,10 @@
         android:textColor="@drawable/txt_boton1"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView16"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.191"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextConsultar"
-        app:layout_constraintVertical_bias="0.953" />
+        app:layout_constraintEnd_toEndOf="@+id/textView16"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toTopOf="@+id/textView16"
+        app:layout_constraintVertical_bias="0.923" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
