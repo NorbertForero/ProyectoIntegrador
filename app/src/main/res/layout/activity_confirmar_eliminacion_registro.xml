@@ -62,10 +62,10 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView16"
         app:layout_constraintEnd_toEndOf="@+id/textView16"
-        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintHorizontal_bias="0.92"
         app:layout_constraintStart_toStartOf="@+id/textView16"
         app:layout_constraintTop_toTopOf="@+id/textView16"
-        app:layout_constraintVertical_bias="0.928" />
+        app:layout_constraintVertical_bias="0.923" />
 
     <Button
         android:id="@+id/buttonAceptar"
