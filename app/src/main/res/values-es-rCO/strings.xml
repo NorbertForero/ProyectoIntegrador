@@ -23,6 +23,7 @@
     <string name="button_RegistroActualizado_SeguirBuscando">Seguir Buscando</string>
     <string name="ActivityConsultarRegistro_title">Consultar registro</string>
     <string name="ActivityEditarRegistro_title">Editar registro</string>
+    <string name="confirmarEliminacionRegistro_title">Eliminar registro</string>
     <string name="button_MainActivity_NuevoRegistro">Nuevo registro</string>
     <string name="button_ActivityMain_RegistrosGuardados">Registros guardados</string>
     <string name="txt_ActivityMain_TuTrabajoDiario">Tu trabajo diario</string>

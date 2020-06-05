@@ -3,9 +3,11 @@ package com.proyectointegrador;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -36,6 +38,36 @@ public class activityConsultarRegistro extends ListActivity {
     private orderData personaSelected;
     private String nombreDB,apellidoDB,serialDB,celularDB,correoDB,cedulaDB,valorArregloDB,fechaIngresoDB,fechaSalidaDB,tecnicoDB,estadoDB;
 
+
+    private void dialogEliminar(){
+        AlertDialog.Builder builder = new AlertDialog.Builder(activityConsultarRegistro.this);
+
+        LayoutInflater inflater = getLayoutInflater();
+
+        View view = inflater.inflate(R.layout.activity_confirmar_eliminacion_registro, null);
+        builder.setView(view);
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
+
+        Button btAceptar = view.findViewById(R.id.buttonAceptar);
+        btAceptar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        Button btCancelar = view.findViewById(R.id.buttonCancelar);
+        btCancelar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -147,9 +179,37 @@ public class activityConsultarRegistro extends ListActivity {
         botonEliminar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent12 = new Intent(getApplicationContext(), confirmarEliminacionRegistro.class);
-                startActivity(intent12);
-            }
+
+                    AlertDialog.Builder builder = new AlertDialog.Builder(activityConsultarRegistro.this);
+
+                    LayoutInflater inflater = getLayoutInflater();
+
+                    View view = inflater.inflate(R.layout.activity_confirmar_eliminacion_registro, null);
+                    builder.setView(view);
+
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+
+                    Button btAceptar = view.findViewById(R.id.buttonAceptar);
+                    btAceptar.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+
+                        }
+                    });
+
+                    Button btCancelar = view.findViewById(R.id.buttonCancelar);
+                    btCancelar.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+
+                        }
+                    });
+                }
+
             });
+
+
+
     }
 }

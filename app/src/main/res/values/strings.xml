@@ -2,6 +2,7 @@
     <string name="app_name">Integrated Project</string>
     <string name="ActivityConsultarRegistro_title">Search record</string>
     <string name="ActivityEditarRegistro_title">Edit record</string>
+    <string name="confirmarEliminacionRegistro_title">Delete record</string>
     <string name="editText_ConsultarRegistro_IngresarSerial">Enter your computer\'s serial number</string>
     <string name="button_ConsultarRegistro_Buscar">Search</string>
     <string name="button_ConsultarRegistro_Editar">Edit</string>

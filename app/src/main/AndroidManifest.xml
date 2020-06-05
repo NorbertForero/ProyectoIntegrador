@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".confirmarEliminacionRegistro"></activity>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
@@ -34,6 +33,10 @@
         <activity
             android:name=".ActivityEditarRegistro"
             android:label="@string/ActivityEditarRegistro_title"
+            android:parentActivityName=".activityConsultarRegistro" />
+        <activity
+            android:name="confirmarEliminacionRegistro"
+            android:label="@string/confirmarEliminacionRegistro_title"
             android:parentActivityName=".activityConsultarRegistro" />
         <activity
             android:name=".ActivityRegistroActualizado"
