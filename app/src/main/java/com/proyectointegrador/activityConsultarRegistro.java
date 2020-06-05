@@ -62,7 +62,6 @@ public class activityConsultarRegistro extends ListActivity {
                 final Query serial = firebaseDatabase.orderByChild("serial").equalTo(serialN);
 
 
-
                 serial.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -98,10 +97,18 @@ public class activityConsultarRegistro extends ListActivity {
 
                                     startActivity(intent);
                                 }
-                                
+
                             });
                         }
 
+                        botonEliminar.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                firebaseDatabase.child(serialN).removeValue();
+                                Intent intent12 = new Intent(getApplicationContext(), confirmarEliminacionRegistro.class);
+                                startActivity(intent12);
+                            }
+                        });
                     }
 
                     @Override
@@ -147,6 +154,7 @@ public class activityConsultarRegistro extends ListActivity {
                                     fila.setVisibility(View.INVISIBLE);
                                 }
                             }else {
+                                fila.setVisibility(View.INVISIBLE);
                                 Toast miToast = Toast.makeText(getApplicationContext(),"Campo de búsqueda vacío",Toast.LENGTH_LONG);
                                 miToast.show();
                             }
