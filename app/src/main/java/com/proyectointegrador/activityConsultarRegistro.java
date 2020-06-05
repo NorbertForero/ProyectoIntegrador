@@ -98,6 +98,7 @@ public class activityConsultarRegistro extends ListActivity {
 
                                     startActivity(intent);
                                 }
+                                
                             });
                         }
 
