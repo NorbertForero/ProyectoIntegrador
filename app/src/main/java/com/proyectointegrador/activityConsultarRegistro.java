@@ -104,8 +104,8 @@ public class activityConsultarRegistro extends ListActivity {
                         botonEliminar.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                firebaseDatabase.child(serialN).removeValue();
                                 Intent intent12 = new Intent(getApplicationContext(), confirmarEliminacionRegistro.class);
+                                intent12.putExtra("serial",serialDB);
                                 startActivity(intent12);
                             }
                         });
